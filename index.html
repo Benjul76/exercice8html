@@ -26,28 +26,65 @@
           <input type="text" name="Prénom" id="Prénom" placeholder="Prénom" size="10" maxlength="10" />
         </P>
 
-        <p><label for="Date de naissance"> Date de naissance</label>
+        <p><label for="Date"> Date de naissance</label>
           <input type="date" />
         </p>
-        <p><label for="numero">Numéro de portable</label>
-          <input type="tel" />
+        <p><label for="tel">Numéro de télélphone</label>
+          <input type="tel" placeholder="Numéro de tel"/>
         </p>
 
+         <p><label for="rue">Nom de rue</label>
+         <textarea name="Nom de rue" id="Nom de rue" placeholder="Nom de rue" size="10" maxlenght="10" /></textarea>
+         <input type="text" name="Numéro de rue" id="Numéro de rue" placeholder="Numéro de rue" size="10" maxlength="10" />
 
-        <p><label for="Prénom">Prénom:</label>
-          <input type="text" id="Prénom" name="Prénom">
+       </p>
+
+        <p><label for="postal">Code postal</label>
+        <input type="text" name="Code postal" id="Code postal" placeholder="Code postal" size="10" maxlength="10" />
+        <label for="Ville">ville</label>
+        <input type="text" name="ville" id="ville" placeholder="ville" size="10"maxlength="10" />
+      </p>
+
+      <fieldset class="Vous connecter">
+        <legend class="Vous connecter">Vous connecter</legend>
+
+        <p><label for="Login">Votre login:</label>
+          <input type="text" placeholder="Login" id="Login" name="Login">
         </P>
 
-        <p><label for="mot de passe">Mot de passe (8 characters minimum):</label>
-          <input type="Mot de passe" id="Mot de passe" name="Mot de passe" minlength="8" required>
+        <p><label for="passe">Mot de passe (8 characters minimum):</label>
+          <input type="Mot de passe" placeholder="Mot de passe" id="Mot de passe" name="Mot de passe" minlength="8" required>
+
+        <input type="submit" value="Confirmer">
+        <input type="password" placeholder="Confirmer" id="confirmer mot de passe" required>
+
+        <button type="submit" class="pure-button pure-button-primary">Confirmer mot de passe</button>
+
+</fieldset>
+</p>
+        <fieldset class="Autres informations">
+        <legend class= "Autres informations">Autres informations</legend>
+        <p>
+           <p><label for="développement">Votre niveau de développement</label></p>
+           <input type="radio" name="Débutant" id="Débutant">Débutant
+           <input type="radio" name="Débutant" id="Junior">Junior
+           <input type="radio" name="Débutant" id="Confirmer">Confirmer
         </p>
-        <input type="submit" value="Sign in">
+
+        <p><label for="langage?">Quelles sont les langages que vous connaissez? cocher la ou les cases.</label>
+         <input type="checkbox" name="Ruby" id="Ruby">Ruby
+         <input type="checkbox" name="Python" id="Python">Python
+         <input type="checkbox" name="Php" id="Php">Php
+         <input type="checkbox" name="Java" id="Java">Java
+         <input type="checkbox" name="NodeJS" id="NodeJS">NodeJS
+         <input type="checkbox" name="ReactJS" id="ReactJS">ReactJS
+         <input type="checkbox" name="C#" id="C#">C#
+     </p>
 
 
 
 
-
-      </fieldset>
+   </fieldset>
 </body>
 
 </html>
