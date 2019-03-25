@@ -8,10 +8,10 @@
 
 <body>
   <form>
-<fieldset class="Contact">
+    <fieldset class="Contact">
       <legend class="Contact">Contact</legend>
-<fieldset>
-      <label for="Civilité">Civilité.</label>
+      <fieldset>
+        <label for="Civilité">Civilité.</label>
 
         <select name="Civilité" id="Civilité">
           <option value="Madame">Madame</option>
@@ -71,22 +71,74 @@
             <input type="radio" name="Débutant" id="Junior">Junior
             <input type="radio" name="Débutant" id="Confirmer">Confirmer
           </p>
-            <p><label for="connaissances?">Quelles sont les langages que vous connaissez?</label></p></br>
-            <input type="checkbox" name="Ruby" id="Ruby">Ruby
-            <input type="checkbox" name="Python" id="Python">Python
-            <input type="checkbox" name="Php" id="Php">Php
-            <input type="checkbox" name="Java" id="Java">Java
-            <input type="checkbox" name="NodeJS" id="NodeJS">NodeJS
-            <input type="checkbox" name="ReactJS" id="ReactJS">ReactJS
-            <input type="checkbox" name="C#" id="C#">C#
+          <p><label for="connaissances?">Quelles sont les langages que vous connaissez?</label></p></br>
+          <input type="checkbox" name="Ruby" id="Ruby">Ruby
+          <input type="checkbox" name="Python" id="Python">Python
+          <input type="checkbox" name="Php" id="Php">Php
+          <input type="checkbox" name="Java" id="Java">Java
+          <input type="checkbox" name="NodeJS" id="NodeJS">NodeJS
+          <input type="checkbox" name="ReactJS" id="ReactJS">ReactJS
+          <input type="checkbox" name="C#" id="C#">C#
           </p>
 
+          <p>
+            <p>
+         <label for="OS">Quelles OS utilisez-vous?</label><br />
+         <select name="OS" id="OS">
+             <optgroup label="Windows">
+                 <option value="Windows7">Windows7</option>
+                 <option value="Windows8">Windows8</option>
+                 <option value="Windows10">Windows10</option>
+             </optgroup>
+             <optgroup label="linux">
+                 <option value="Ubuntu">Ubuntu</option>
+                 <option value="Debian">Debian</option>
+             </optgroup>
+             <optgroup label="Autres">
+                 <option value="MacOS">MacOS</option>
+                 <option value="ChromeOS">Chrome OS</option>
+             </optgroup>
+         </select>
+     </p>
+     <div class="Date d' entré en formation">
+    <p><label for="Date">Quelle est votre date d'entré en formation?:</label>
+         <span class="mois"></span>
+       </div>
+           <span>
+             <label for="Mois">Mois :</label>
+             <select id="Mois" name="Mois">
+               <option selected>Janvier</option>
+               <option>Février</option>
+               <option>Mars</option>
+               <option>Avril</option>
+               <option>Mai</option>
+               <option>Juin</option>
+               <option>Juillet</option>
+               <option>Août</option>
+               <option>Septembre</option>
+               <option>Octobre</option>
+               <option>Novembre</option>
+               <option>Décembre</option>
+             </select>
+           </span>
+           <span>
+             <label for="Année">Année :</label>
+             <select id="Année" name="Année">
+             </select>
+           </span>
+         </div>
+       <p><label for="url">Merci de précisé l'url de votre Github:</label>
+         <input type="url" />
+       </P>
 
-
-
-
-
-        </fieldset>
-</body>
+       <p>
+      <label for="Commentaire">Commentaire:</label>
+      <textarea name="Commentaire" id="Commentaire" rows="10" cols="50">
+      </textarea>
+  </p>
+          </fieldset>
+          <input type="submit" value="Envoyer" />
+        </form>
+      </body>
 
 </html>
